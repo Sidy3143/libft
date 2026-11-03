@@ -6,9 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:33:56 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/03 15:24:17 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:20:11 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void *ft_memmove(void *dest, void *src, size_t n)
 {
@@ -25,7 +27,7 @@ void *ft_memmove(void *dest, void *src, size_t n)
             d++;
             s++;
             n--;
-        }   
+        }
     }
     else {
         while (n > 0)
@@ -36,3 +38,12 @@ void *ft_memmove(void *dest, void *src, size_t n)
     }
     return (dest);
 }
+
+/*
+int main(void)
+{
+    char src[20] = "123456789";
+    ft_memmove(src + 12, src, 5);
+    printf("src = %s", src);
+    printf("copie = %s", src + 12);
+}*/
