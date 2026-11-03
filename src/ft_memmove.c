@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:33:56 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/03 15:52:14 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:20:11 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void *ft_memmove(void *dest, void *src, size_t n)
             d++;
             s++;
             n--;
-        }   
+        }
     }
     else {
         while (n > 0)
@@ -38,6 +38,7 @@ void *ft_memmove(void *dest, void *src, size_t n)
     }
     return (dest);
 }
+
 /*
 int main(void)
 {
