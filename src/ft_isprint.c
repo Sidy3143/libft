@@ -6,20 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:47:43 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/02 17:52:49 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:24:42 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(char *s)
+int ft_isprint(int c)
 {
-    int i;
-
-	i = 0;
-	while (s[i])
-	{
-		if ((0 <= s[i] && s[i] <= 32) || s[i] == 127)
-			return (0);
-        i++;
-	}
+	if ((0 <= c && c <= 32) || c == 127)
+		return (0);
 	return (1);
 }
