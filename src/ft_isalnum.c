@@ -6,20 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:15:24 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/02 17:20:40 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:03:45 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char *s)
+int	ft_isalnum(int c)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-	{
-		if (!(('0' <= s[i] && s[i] <= '9') || ('a' <= s[i] && s[i] <= 'z') || ('A' <= s[i] && s[i] <= 'Z')))
-			return (0);
-        i++;
-	}
+	if (!(('0' <= c && c <= '9') || ('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z')))
+		return (0);
 	return (1);
 }

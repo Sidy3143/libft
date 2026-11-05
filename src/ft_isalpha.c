@@ -6,20 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:01:30 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/02 17:08:37 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:23:30 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char *s)
+int	ft_isalpha(int c)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-	{
-		if (!(('a' <= s[i] && s[i] <= 'z') || ('A' <= s[i] && s[i] <= 'Z')))
-			return (0);
-        i++;
-	}
+	if (!(('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z')))
+		return (0);
 	return (1);
 }

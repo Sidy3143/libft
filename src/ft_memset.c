@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:00:13 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/03 12:34:37 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/04 10:34:17 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,5 @@ int main(void)
     
     printf("Avant : %s\n", word);
     ft_memset(word, 'a', 9);
-    printf("Après : %s\n", word);
+    //printf("Après : %s\n", word);
 }*/

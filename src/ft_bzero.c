@@ -6,13 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:26:11 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/03 10:45:05 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/04 10:50:50 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void *ft_bzero(void *pointer, size_t n)
+void ft_bzero(void *pointer, size_t n)
 {
     unsigned char *p;
 
@@ -23,7 +23,6 @@ void *ft_bzero(void *pointer, size_t n)
         p++;
         n--;
     }
-    return (pointer);
 }
 /*
 int main(void)

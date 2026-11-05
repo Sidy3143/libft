@@ -6,20 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:17:26 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/02 17:17:37 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:24:06 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char *s)
+int	ft_isdigit(int c)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-	{
-		if (!('0' <= s[i] && s[i] <= '9'))
-			return (0);
-        i++;
-	}
+	if (!('0' <= c && c <= '9'))
+		return (0);
 	return (1);
 }
