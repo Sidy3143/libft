@@ -6,13 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 19:33:01 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/04 20:02:03 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/05 10:56:00 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *strrchr(const char *s, int c)
+char *ft_strrchr(const char *s, int c)
 {
     int i;
     int len;
@@ -27,9 +27,9 @@ char *strrchr(const char *s, int c)
         return ((char *)(s + i));
     return (NULL);
 }
-
+/*
 int main(void)
 {
     char str[] = "abcdecdgg";
-    printf("%s\n", strrchr(str, 'c'));
-}
+    printf("%s\n", ft_strrchr(str, 'c'));
+}*/
