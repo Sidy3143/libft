@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 17:07:52 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/05 17:08:40 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:09:45 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,6 @@
 void *calloc(size_t n, size_t size)
 {
     
+    if (n == 0 || size == 0)
+        return (NULL);
 }
