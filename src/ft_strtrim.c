@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 18:36:44 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/06 20:43:13 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/06 20:50:57 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ char *ft_strtrim(char const *s1, char const *set)
     i = 0;
     while (s1[s1_len])
         s1_len++;
+    //if (s1_len == 0)
     j = s1_len - 1;
     while (ft_istrim(s1[i], set))
         i++;
