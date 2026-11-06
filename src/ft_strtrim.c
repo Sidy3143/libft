@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 18:36:44 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/06 20:39:59 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/06 20:43:13 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int ft_istrim(char c, char const *set)
     {
         if (c == set[i])
             return (1);
+        i++;
     }
     return (0);
 }
