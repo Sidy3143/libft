@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 18:36:44 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/06 20:50:57 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/06 20:56:00 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,17 @@ char *ft_strtrim(char const *s1, char const *set)
     i = 0;
     while (s1[s1_len])
         s1_len++;
-    //if (s1_len == 0)
     j = s1_len - 1;
+    if (s1_len == 0)
+        j = 0;
     while (ft_istrim(s1[i], set))
         i++;
     while (ft_istrim(s1[j], set))
         j--;
+    if (i == s1_len)
+    {
+        
+    }
     trimstr = malloc(j - i + 1 + 1);
     if (!trimstr)
         return (NULL);
