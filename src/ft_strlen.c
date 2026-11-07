@@ -6,16 +6,19 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:58:03 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/02 18:00:07 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/07 19:47:14 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *s)
+#include "../includes/ft.h"
+#include <stddef.h>
+
+size_t ft_strlen(char const *s)
 {
-    int i;
-    
+    size_t i;
+
     i = 0;
     while(s[i])
         i++;
-    rerturn (i);
+    return (i);
 }
