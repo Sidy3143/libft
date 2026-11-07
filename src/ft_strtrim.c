@@ -6,70 +6,71 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 18:36:44 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/06 20:56:00 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/07 13:24:45 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int ft_istrim(char c, char const *set)
+int	ft_istrim(char c, char const *set)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (set[i])
-    {
-        if (c == set[i])
-            return (1);
-        i++;
-    }
-    return (0);
+	i = 0;
+	while (set[i])
+	{
+		if (c == set[i])
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+size_t	ft_strlen(char *s)
 {
-    int i;
-    int j;
-    int k;
-    int l;
-    int s1_len;
-    char    *trimstr;
-    
-    s1_len = 0;
-    i = 0;
-    while (s1[s1_len])
-        s1_len++;
-    j = s1_len - 1;
-    if (s1_len == 0)
-        j = 0;
-    while (ft_istrim(s1[i], set))
-        i++;
-    while (ft_istrim(s1[j], set))
-        j--;
-    if (i == s1_len)
-    {
-        
-    }
-    trimstr = malloc(j - i + 1 + 1);
-    if (!trimstr)
-        return (NULL);
-    k = i;
-    l = 0;
-    while (k <= j)
-    {
-        trimstr[l] = s1[k];
-        k++;
-        l++;
-    }
-    trimstr[l] = '\0';
-    return (trimstr);
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	rerturn(i);
 }
 
-int main(void)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    char str[] = "***hello, sidy***";
-    char set[] = "*-";
-    char *trim = ft_strtrim(str, set);
-    printf("str = %s\n", trim);
+	int		i;
+	int		j;
+	int		k;
+	int		taille;
+	char	*trimstr;
+
+	i = 0;
+	j = ft_strlen(s1) - 1;
+	while (s1[i] && ft_istrim(s1[i], set))
+		i++;
+	while (j >= 0 && ft_istrim(s1[j], set))
+		j--;
+	taille = j - i + 1;
+	if (i > j)
+		taille = 0;
+	trimstr = malloc(taille + 1);
+	if (!trimstr)
+		return (NULL);
+	k = 0;
+	while (k < taille)
+	{
+		trimstr[k] = s1[k];
+		k++;
+	}
+	trimstr[k] = '\0';
+	return (trimstr);
 }
+/*
+int	main(void)
+{
+	char str[] = "**hello, *sidy**";
+	char set[] = "*-";
+	char *trim = ft_strtrim(str, set);
+	printf("str = %s\n", trim);
+}*/
