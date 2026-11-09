@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 18:51:14 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/09 19:45:50 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/09 20:01:45 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
     t_list  *new_list;
     t_list  *new_node;
 
+    if (!lst || !f || !del)
+        return (NULL);
     new_list = NULL;
     while (lst)
     {
