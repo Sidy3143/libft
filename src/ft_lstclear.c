@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 17:46:46 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/09 18:26:45 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/09 18:40:06 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
     t_list  *next;
 
     if (!lst || !del)
-        return ;
-    if (!*lst)
         return ;
     current = *lst;
     while (current)
