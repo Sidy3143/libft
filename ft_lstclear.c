@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 17:46:46 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:16:36 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:23:41 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void ft_lstclear(t_list **lst, void (*del)(void *))
 {

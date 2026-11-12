@@ -6,26 +6,16 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 19:25:10 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:19:13 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:25:40 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
-
-int ft_strlen(char const *s)
-{
-    int i;
-
-    i = 0;
-    while (s[i])
-        i++;
-    return (i);
-}
+#include "libft.h"
 
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    int len;
-    unsigned int i;
+    size_t len;
+    size_t i;
     char    *str;
 
     len = ft_strlen(s);

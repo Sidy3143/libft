@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:20:36 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:32 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:25:30 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 
 size_t ft_strlcpy(char *dest, const char *src, size_t size)

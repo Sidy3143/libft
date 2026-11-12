@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:26:11 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:15:52 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:22:55 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void ft_bzero(void *s, size_t n)
 {

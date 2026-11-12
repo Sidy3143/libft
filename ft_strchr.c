@@ -6,20 +6,22 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 18:52:04 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:05 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:55:48 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
-char *strchr(const char *s, int c)
+char *ft_strchr(const char *s, int c)
 {
     int i;
+    unsigned char    my_char;
 
     i = 0;
-    while (s[i] && c != s[i])
+    my_char = (unsigned char)c;
+    while (s[i] && my_char != s[i])
         i++;
-    if (s[i])
+    if (my_char == s[i])
         return ((char *)(s+ i));
     return (NULL);
 }

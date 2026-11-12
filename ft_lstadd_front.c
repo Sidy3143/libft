@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 11:18:07 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:16:32 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:23:36 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void ft_lstadd_front(t_list **lst, t_list *new)
 {

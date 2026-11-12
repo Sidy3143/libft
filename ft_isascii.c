@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:42:06 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:16:12 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:23:12 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 int ft_isascii(int c)
 {

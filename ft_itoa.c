@@ -6,18 +6,18 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 17:57:54 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:16:24 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 20:04:11 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 int ft_length(int n)
 {
     int length;
     
     length = 0;
-    if (n < 0)
+    if (n <= 0)
     {
         n = -n;
         length++;
@@ -33,27 +33,31 @@ int ft_length(int n)
 char *ft_itoa(int n)
 {
     int length;
-    int sign;
+    long    nb;
     char    *num;
 
-    length = ft_length(n);
-    num = malloc(length + 1);
+    nb = n;
+    length = ft_length(nb);
+    num = malloc(sizeof(char) * (length + 1));
     if (!num)
         return (NULL);
-    if (n < 0)
+    if (nb == 0)
+        num[0] = '0';
+    if (nb < 0)
     {
         num[0] = '-';
-        n = -n;
+        nb = -nb;
     }
     num[length] = '\0';
-    while (length > 1)
+    while (nb != 0)
     {
         length--;
-        num[length] = (n % 10 + '0');
-        n = n / 10;
+        num[length] = (nb % 10 + '0');
+        nb = nb / 10;
     }
     return (num);
 }
+
 /*
 int main(void)
 {

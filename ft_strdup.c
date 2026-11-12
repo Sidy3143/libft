@@ -6,18 +6,18 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:05:26 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:12 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:27:16 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
-char *strdup(const char *s)
+char *ft_strdup(const char *s)
 {
     size_t len;
     char    *dup;
     size_t  i;
-    
+
     if (!s)
         return (NULL);
     len = 0;

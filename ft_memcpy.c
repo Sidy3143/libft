@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:27:16 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:17:22 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:24:21 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {

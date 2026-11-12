@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 10:42:44 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:17:52 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:24:51 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void ft_putstr_fd(char *s, int fd)
 {

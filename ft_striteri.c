@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 19:52:42 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:15 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:25:15 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

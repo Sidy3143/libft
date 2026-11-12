@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:58:03 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:42 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:25:35 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 size_t ft_strlen(char const *s)
 {

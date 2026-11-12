@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 11:02:48 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:17:01 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:24:02 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 t_list *ft_lstnew(void *content)
 {

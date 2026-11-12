@@ -6,11 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:33:56 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:17:26 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:24:26 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
