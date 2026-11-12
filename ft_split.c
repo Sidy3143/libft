@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 15:08:45 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:01 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 17:26:50 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ char **ft_split(char const *s, char c)
     split[j] = NULL;
     return (split);
 }
-
+/*
 int main(void)
 {
     char str[] = "sidy*is*here*haha**hihi**";
@@ -118,4 +118,4 @@ int main(void)
         i++;
     }
     free(split);
-}
+}*/

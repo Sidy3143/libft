@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 18:29:42 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 16:18:27 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/12 17:26:32 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
     dest[dest_len + i] = '\0';
     return (dest_len + src_len);
 }
-
+/*
 int main(void)
 {
    char buffer[20] = "hello";
    char str[6] = " sidy";
    printf("return size = %d\n", ft_strlcat(buffer, str, 3));
    printf("buffer = %s\n",buffer);
-}
+}*/
