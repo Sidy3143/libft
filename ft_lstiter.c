@@ -6,17 +6,17 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 18:28:13 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 18:23:49 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/13 12:39:18 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    while (lst)
-    {
-        f(lst->content);
-        lst = lst -> next;
-    }
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

@@ -6,18 +6,18 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:58:03 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 18:25:35 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/13 12:42:43 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(char const *s)
+size_t	ft_strlen(char const *s)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while(s[i])
-        i++;
-    return (i);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

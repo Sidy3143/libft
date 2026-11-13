@@ -1,11 +1,23 @@
-#ifndef FT_H
-# define FT_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/13 12:23:09 by sindiaye          #+#    #+#             */
+/*   Updated: 2026/11/13 12:23:39 by sindiaye         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include <unistd.h>
+#ifndef LIBFT_H
+# define LIBFT_H
+
 # include <stddef.h>
+# include <stdint.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <stdint.h>
+# include <unistd.h>
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -56,6 +68,7 @@ void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
-t_list				*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
+						void (*del)(void *));
 
 #endif

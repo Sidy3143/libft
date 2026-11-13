@@ -6,13 +6,13 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:47:43 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 18:32:40 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/13 12:38:05 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if ((32 <= c && c <= 126))
 		return (1);

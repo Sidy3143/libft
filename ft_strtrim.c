@@ -6,12 +6,11 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 18:36:44 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 18:26:01 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/13 12:57:27 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	ft_istrim(char c, char const *set)
 {
@@ -29,10 +28,9 @@ int	ft_istrim(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t		i;
-	size_t		j;
-	size_t		k;
-	size_t		taille;
+	size_t	i;
+	size_t	j;
+	size_t	k;
 	char	*trimstr;
 
 	if (!s1 || !set)
@@ -43,12 +41,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while ((j > i) && ft_istrim(s1[j], set))
 		j--;
-	taille = j - i + 1;
-	trimstr = malloc(taille + 1);
+	trimstr = malloc(j - i + 1 + 1);
 	if (!trimstr)
 		return (NULL);
 	k = 0;
-	while (k < taille)
+	while (k < j - i + 1)
 	{
 		trimstr[k] = s1[i + k];
 		k++;
@@ -56,7 +53,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimstr[k] = '\0';
 	return (trimstr);
 }
-
 /*
 int	main(void)
 {
