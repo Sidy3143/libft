@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 17:07:52 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/12 19:26:12 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/13 09:10:50 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void *ft_calloc(size_t n, size_t size)
     if (total_size == 0)
         total_size = 1;
     p = malloc(total_size);
+    if (!p)
+        return (NULL);
     i = 0;
     while (i < total_size)
     {
